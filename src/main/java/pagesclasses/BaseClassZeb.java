@@ -5,12 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public abstract class BaseClassHealth {
+public abstract class BaseClassZeb {
 	
 	Properties prop;
 	FileInputStream fis;
 
-	public  BaseClassHealth() throws IOException
+	public  BaseClassZeb() throws IOException
 	{
 		prop = new Properties();
 		

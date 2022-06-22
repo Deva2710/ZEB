@@ -10,23 +10,23 @@ public class ExtentReportGen {
 
 	public static ExtentReports extentReportGeneration()
 	{
-		String path = System.getProperty("user.dir")+"//Reports//KGItestreport.html";
+		String path = System.getProperty("user.dir")+"//Reports//Zebtestreport.html";
 		
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(path);
 		
 		reporter.config().setTheme(Theme.DARK);
 		
-		reporter.config().setReportName("Insurnace Test Report");
+		reporter.config().setReportName("Zeb Test Report");
 		
 		 extent = new ExtentReports();
 		
 		extent.attachReporter(reporter);
 		
-		extent.setSystemInfo("Project name", "kotak general Insurance");
+		extent.setSystemInfo("Project name", "ZEB");
 		
-		extent.setSystemInfo("Environment", "SIT");
+	//	extent.setSystemInfo("Environment", "SIT");
 		
-		extent.setSystemInfo("Executed by", "Mockgroup");
+		extent.setSystemInfo("Executed by", "Devanand Rathod");
 		
 		return extent;
 	}

@@ -11,12 +11,11 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import Utility.Screenshot;
-import Utility.ScreenshotsaveinElicpse;
-import testsclasses.Healthcarekotak1;
+import testsclasses.BaseTest;
 
-public class Listeners extends Healthcarekotak1 implements ITestListener{
+public class Listeners extends BaseTest implements ITestListener{
 
-	ExtentReports extent = ExtentReportGen.extentReportGeneration();
+ExtentReports extent = ExtentReportGen.extentReportGeneration();
 	
 	public static ExtentTest test;
 	
@@ -42,7 +41,7 @@ public class Listeners extends Healthcarekotak1 implements ITestListener{
 		
 		try
 		{
-			test.addScreenCaptureFromPath(Screenshot.Screenshot1(d, result.getName()));
+			test.addScreenCaptureFromPath(Screenshot.Screenshot1(driver, result.getName()));
 		} 
 		catch (IOException e) {
 			
