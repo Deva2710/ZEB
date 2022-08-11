@@ -12,39 +12,48 @@ public class PC_01_HomePage {
 	
 	WebDriver driver;
 	
+	@FindBy(xpath = "(//*[text()='dames'])[1]")
+	private WebElement DAMES;
+	
+	@FindBy(xpath = "(//*[text()='heren'])[1]")
+	private WebElement HEREN;
+	
     @FindBy(xpath = "(//*[@class='pe-7s-search'])[2]")
-    WebElement searchbox;
+    private WebElement searchbox;
     
     @FindBy(xpath = "//button[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']")
-    WebElement cookies;
+    private WebElement cookies;
     
     @FindBy(xpath = "//*[@id='search']")
-    WebElement Searchtextbox;	
+    private WebElement Searchtextbox;	
     
 	public PC_01_HomePage(WebDriver driver) {
 		this.driver=driver;
-		
 		PageFactory.initElements(driver, this);
+	
+	}
+	public void ClickOnDames() throws InterruptedException {
+		Thread.sleep(3000);
+		DAMES.click();	
+	}
+
+	public void AcceptCookies() throws InterruptedException {
+		Thread.sleep(3000);
+		cookies.click();
 	}
 	
-	public void Verifysearch() throws InterruptedException {
-		Thread.sleep(2000);	
+	public void Verifysearch() throws InterruptedException{
+		Thread.sleep(3000);
 		searchbox.click();	
 	}
 	
-	public void AcceptCookies() {
-		cookies.click();
-	}
 	
 	public void VerifySearchtextbox() {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", Searchtextbox);
-	
 		Searchtextbox.sendKeys("T-shirt");
 		Searchtextbox.sendKeys(Keys.ENTER);
-	//	js.executeScript("arguments[0].value='T-Shirt';", Searchtextbox);
-		
-
 	}
+
 }
 

@@ -12,14 +12,11 @@ public abstract class BaseClassZeb {
 
 	public  BaseClassZeb() throws IOException
 	{
-		prop = new Properties();
-		
+		prop = new Properties();	
 		String path = System.getProperty("user.dir")+"\\config.properties";
 		
-		 fis = new FileInputStream(path);
-		
+		 fis = new FileInputStream(path);		
 		prop.load(fis);
-		
-		
+			
 	}
 }

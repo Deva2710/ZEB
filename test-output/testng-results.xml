@@ -1,25 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="5" total="11" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-20T14:18:19 IST" name="Default suite" finished-at="2022-06-20T14:18:45 IST" duration-ms="25972">
+  <suite started-at="2022-08-11T10:36:11 IST" name="Suite" finished-at="2022-08-11T10:38:55 IST" duration-ms="163109">
     <groups>
     </groups>
-    <test started-at="2022-06-20T14:18:19 IST" name="Default test" finished-at="2022-06-20T14:18:45 IST" duration-ms="25972">
-      <class name="testsclasses.RunHometestclass">
-        <test-method is-config="true" signature="intiDriver()[pri:0, instance:testsclasses.RunHometestclass@72cde7cc]" started-at="2022-06-20T14:17:39 IST" name="intiDriver" finished-at="2022-06-20T14:18:19 IST" duration-ms="40158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intiDriver -->
-        <test-method is-config="true" signature="creteobject()[pri:0, instance:testsclasses.RunHometestclass@72cde7cc]" started-at="2022-06-20T14:18:19 IST" name="creteobject" finished-at="2022-06-20T14:18:19 IST" duration-ms="39" status="PASS">
+    <test started-at="2022-08-11T10:36:11 IST" name="Test" finished-at="2022-08-11T10:38:55 IST" duration-ms="163109">
+      <class name="testsclasses.TC_03_CartTest">
+        <test-method is-config="true" signature="creteobject()[pri:0, instance:testsclasses.TC_03_CartTest@7690781]" started-at="2022-08-11T10:37:02 IST" name="creteobject" finished-at="2022-08-11T10:37:02 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creteobject -->
-        <test-method signature="RunSearchbox()[pri:0, instance:testsclasses.RunHometestclass@72cde7cc]" started-at="2022-06-20T14:18:19 IST" name="RunSearchbox" finished-at="2022-06-20T14:18:45 IST" duration-ms="25856" status="PASS">
+        <test-method signature="RunTC_03_CartTest()[pri:0, instance:testsclasses.TC_03_CartTest@7690781]" started-at="2022-08-11T10:37:02 IST" name="RunTC_03_CartTest" finished-at="2022-08-11T10:37:24 IST" duration-ms="22255" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RunSearchbox -->
-      </class> <!-- testsclasses.RunHometestclass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- RunTC_03_CartTest -->
+      </class> <!-- testsclasses.TC_03_CartTest -->
+      <class name="testsclasses.TC_031_Dilevery_Test">
+        <test-method is-config="true" signature="creteobject()[pri:0, instance:testsclasses.TC_031_Dilevery_Test@77eca502]" started-at="2022-08-11T10:37:24 IST" name="creteobject" finished-at="2022-08-11T10:37:24 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creteobject -->
+        <test-method signature="RunTC_031_Dilevery_Test()[pri:0, instance:testsclasses.TC_031_Dilevery_Test@77eca502]" started-at="2022-08-11T10:37:24 IST" name="RunTC_031_Dilevery_Test" finished-at="2022-08-11T10:37:48 IST" duration-ms="23686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunTC_031_Dilevery_Test -->
+      </class> <!-- testsclasses.TC_031_Dilevery_Test -->
+      <class name="testsclasses.TC_04_AddressTest">
+        <test-method is-config="true" signature="creteobject()[pri:0, instance:testsclasses.TC_04_AddressTest@3246fb96]" started-at="2022-08-11T10:37:48 IST" name="creteobject" finished-at="2022-08-11T10:37:48 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creteobject -->
+        <test-method signature="RunTC_04_AddressTest()[pri:0, instance:testsclasses.TC_04_AddressTest@3246fb96]" started-at="2022-08-11T10:37:48 IST" name="RunTC_04_AddressTest" finished-at="2022-08-11T10:38:05 IST" duration-ms="17159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunTC_04_AddressTest -->
+      </class> <!-- testsclasses.TC_04_AddressTest -->
+      <class name="testsclasses.TC_02_SearchTest">
+        <test-method is-config="true" signature="creteobject()[pri:0, instance:testsclasses.TC_02_SearchTest@26275bef]" started-at="2022-08-11T10:36:38 IST" name="creteobject" finished-at="2022-08-11T10:36:38 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creteobject -->
+        <test-method signature="RunTC_02_SearchTest()[pri:0, instance:testsclasses.TC_02_SearchTest@26275bef]" started-at="2022-08-11T10:36:38 IST" name="RunTC_02_SearchTest" finished-at="2022-08-11T10:37:02 IST" duration-ms="24036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunTC_02_SearchTest -->
+      </class> <!-- testsclasses.TC_02_SearchTest -->
+      <class name="testsclasses.TC_05_PaymentTest">
+        <test-method is-config="true" signature="creteobject()[pri:0, instance:testsclasses.TC_05_PaymentTest@2e222612]" started-at="2022-08-11T10:38:05 IST" name="creteobject" finished-at="2022-08-11T10:38:05 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creteobject -->
+        <test-method signature="RunTC_05_PaymentTest()[pri:0, instance:testsclasses.TC_05_PaymentTest@2e222612]" started-at="2022-08-11T10:38:05 IST" name="RunTC_05_PaymentTest" finished-at="2022-08-11T10:38:55 IST" duration-ms="49567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunTC_05_PaymentTest -->
+      </class> <!-- testsclasses.TC_05_PaymentTest -->
+      <class name="testsclasses.TC_01_HomeTest">
+        <test-method is-config="true" signature="intiDriver()[pri:0, instance:testsclasses.TC_01_HomeTest@4d910fd6]" started-at="2022-08-11T10:35:50 IST" name="intiDriver" finished-at="2022-08-11T10:36:11 IST" duration-ms="21532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intiDriver -->
+        <test-method is-config="true" signature="creteobject()[pri:0, instance:testsclasses.TC_01_HomeTest@4d910fd6]" started-at="2022-08-11T10:36:12 IST" name="creteobject" finished-at="2022-08-11T10:36:12 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creteobject -->
+        <test-method signature="RunTC_01_HomeTest()[pri:0, instance:testsclasses.TC_01_HomeTest@4d910fd6]" started-at="2022-08-11T10:36:12 IST" name="RunTC_01_HomeTest" finished-at="2022-08-11T10:36:37 IST" duration-ms="25421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunTC_01_HomeTest -->
+      </class> <!-- testsclasses.TC_01_HomeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

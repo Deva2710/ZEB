@@ -21,16 +21,16 @@ ExtentReports extent = ExtentReportGen.extentReportGeneration();
 	
 	@Override
 	public void onTestStart(ITestResult result) {
-		System.out.println("Test case Started: "+ result.getName());
-		
+		System.out.println("Test case Started: "+ result.getName());	
 		test = extent.createTest(result.getName());
+	
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("Test case Passed: "+ result.getName());
-		
 		test.log(Status.PASS, "Test case is passed");
+	
 	}
 
 	@Override
@@ -53,6 +53,7 @@ ExtentReports extent = ExtentReportGen.extentReportGeneration();
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		System.out.println("Test case Skipped: "+ result.getMethod());
+	
 	}
 
 	@Override
@@ -60,21 +61,19 @@ ExtentReports extent = ExtentReportGen.extentReportGeneration();
 	
 	}
 
-	@Override
-	public void onTestFailedWithTimeout(ITestResult result) {
-		
-	}
+	
 
 	@Override
 	public void onStart(ITestContext context) {
 		System.out.println("Test Started: "+  context.getName());
+	
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
 		System.out.println("Test completed: "+  context.getName());
-		
 		extent.flush();
+	
 	}
 	
 

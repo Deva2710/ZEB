@@ -14,16 +14,15 @@ public class Screenshot {
     {
   TakesScreenshot a = (TakesScreenshot) g ; // object making TakesScreen 
   
-     File source = a.getScreenshotAs(OutputType.FILE);
-     
-     
+         File source = a.getScreenshotAs(OutputType.FILE);
+    
          String path = System.getProperty("user.dir")+"\\PradeepScreenshot\\"+name+".png";
          
          File destination =  new  File(path);
      
-        FileHandler.copy(source, destination);
+         FileHandler.copy(source, destination);
         
-        return path;
+         return path;
      
     }
 }

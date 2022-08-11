@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extentlisteners.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testsclasses.RunHometestclass">
+      <class name="testsclasses.TC_031_Dilevery_Test">
         <methods>
           <include name="creteobject"/>
           <include name="intiDriver"/>
-          <include name="RunSearchbox"/>
+          <include name="RunTC_031_Dilevery_Test"/>
         </methods>
-      </class> <!-- testsclasses.RunHometestclass -->
+      </class> <!-- testsclasses.TC_031_Dilevery_Test -->
+      <class name="testsclasses.TC_04_AddressTest">
+        <methods>
+          <include name="creteobject"/>
+          <include name="intiDriver"/>
+          <include name="RunTC_04_AddressTest"/>
+        </methods>
+      </class> <!-- testsclasses.TC_04_AddressTest -->
+      <class name="testsclasses.TC_05_PaymentTest">
+        <methods>
+          <include name="creteobject"/>
+          <include name="RunTC_05_PaymentTest"/>
+          <include name="intiDriver"/>
+        </methods>
+      </class> <!-- testsclasses.TC_05_PaymentTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

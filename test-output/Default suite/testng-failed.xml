@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testsclasses.RunHometestclass">
+      <class name="testsclasses.TC_01_HomeTest">
         <methods>
           <include name="creteobject"/>
+          <include name="RunTC_01_HomeTest"/>
           <include name="intiDriver"/>
-          <include name="RunSearchbox"/>
         </methods>
-      </class> <!-- testsclasses.RunHometestclass -->
+      </class> <!-- testsclasses.TC_01_HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

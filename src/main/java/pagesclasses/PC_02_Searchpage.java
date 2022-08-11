@@ -12,46 +12,58 @@ public class PC_02_Searchpage {
 
 	WebDriver driver;
 	
-	@FindBy(xpath = "//*[@id='product-item-info_649880']")
-	WebElement Product;
+	@FindBy(xpath = "(//*[@class='product photo product-item-photo'])[4]")
+	private WebElement Product;
 	
 	@FindBy(xpath = "//*[@id='attribute180']")
-	WebElement  Size;
+	private WebElement  Size;
 	
 	@FindBy(xpath = "//*[@id='product-addtocart-button']")
-	WebElement WINKEL;
+	private WebElement WINKEL;
+	
+	@FindBy(xpath = "(//button[@class='viewcart'])")
+	WebElement popup;
 	
 	@FindBy(xpath = "//button[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']")
-	WebElement cookies1;
+	private WebElement cookies1;
+	
 
 	public PC_02_Searchpage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
+	
 	}
 	
-	public void SelectProduct() {
-		   JavascriptExecutor js = (JavascriptExecutor)driver;
-		   js.executeScript("window.scrollBy(0,100)");
-		   Product.click();	
-	}
+	public void SelectProduct() throws InterruptedException {
+		Thread.sleep(3000);  
+		Product.click();	
+		  }
 	
 	public void SelectSize() throws InterruptedException {
-
-	Size.click();
-	Select se = new Select (Size);
-    se.selectByIndex(3);
-    Size.click();
-    JavascriptExecutor js = (JavascriptExecutor)driver;
-	Thread.sleep(2000);
-    js.executeScript("window.scrollBy(0,150)");
+		Thread.sleep(3000);
+		   JavascriptExecutor js = (JavascriptExecutor)driver;
+	         js.executeScript("window.scrollBy(0,400)");
+		  Size.click();
+		  Thread.sleep(3000);
+	      Select se = new Select (Size);
+         se.selectByVisibleText("L");
+		  
+         Size.click();
+         Thread.sleep(2000);
+	
 	}
 	
 	public void checkout1() throws InterruptedException {
-		//driver.switchTo().frame(iframe);
-		WINKEL.click();
-		Thread.sleep(3000);
-	//	popup.click();
+		  WINKEL.click();
+	
 	}
+	
+	public void PopUpCheckout() throws InterruptedException {
+   	 Thread.sleep(3000);
+	    popup.click();
+
+ 
+    }
 	
 	
 }

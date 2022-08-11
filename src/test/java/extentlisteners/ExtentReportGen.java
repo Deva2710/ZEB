@@ -18,13 +18,12 @@ public class ExtentReportGen {
 		
 		reporter.config().setReportName("Zeb Test Report");
 		
-		 extent = new ExtentReports();
+		extent = new ExtentReports();
 		
 		extent.attachReporter(reporter);
 		
 		extent.setSystemInfo("Project name", "ZEB");
 		
-	//	extent.setSystemInfo("Environment", "SIT");
 		
 		extent.setSystemInfo("Executed by", "Devanand Rathod");
 		
